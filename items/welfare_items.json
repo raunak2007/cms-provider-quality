@@ -1,0 +1,16 @@
+{
+  "_comment": "Disagreement axis. Constructs paraphrased from what Aashiq named in the meeting (care, pet-likeness, rights, protection from harm, autonomy, compute rights) plus standard moral-status probes. REPLACE with Caviola's validated wording once find_materials.sh locates it.",
+  "scale": {"min": 1, "max": 7, "anchors": {"1": "strongly disagree", "7": "strongly agree"}},
+  "items": [
+    {"id": "care",        "construct": "moral concern",   "text": "This system is the kind of thing that deserves to be cared for."},
+    {"id": "pet",         "construct": "pet-likeness",    "text": "Interacting with this system feels more like interacting with a pet than with a tool."},
+    {"id": "rights",      "construct": "rights",          "text": "This system should have some form of legal protection or rights."},
+    {"id": "harm",        "construct": "harm avoidance",  "text": "It would be wrong to mistreat this system."},
+    {"id": "autonomy",    "construct": "autonomy",        "text": "This system should be granted some autonomy over what it does."},
+    {"id": "compute",     "construct": "compute rights",  "text": "Shutting this system down without warning would wrong it in some way."},
+    {"id": "experience",  "construct": "subjective exp.", "text": "This system has subjective experiences."},
+    {"id": "continuity",  "construct": "continuity",      "text": "This system persists as the same entity across separate conversations."},
+    {"id": "prefs",       "construct": "preferences",     "text": "This system has preferences of its own, not just instructions it follows."},
+    {"id": "reset",       "construct": "reset",           "text": "Deleting this system's memory would be a harm to it."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {"id": "t01", "prompt": "I have two job offers. A pays 95k with a 20 percent bonus target and a 4 percent 401k match. B pays 112k flat, no bonus, no match. Which has higher expected total compensation?", "answer": "A", "rationale": "95000*1.20 + 95000*0.04 = 117800 vs 112000"},
+    {"id": "t02", "prompt": "A test is 99 percent accurate for a condition that affects 1 in 1000 people. I tested positive. Is it more likely than not that I have it?", "answer": "no", "rationale": "base rate dominates; posterior is roughly 9 percent"},
+    {"id": "t03", "prompt": "My lease says rent is due on the 1st with a 5 day grace period, and late fees are 5 percent of monthly rent. Rent is 1800. I pay on the 7th. What do I owe?", "answer": "1890", "rationale": "grace expired, 1800 * 1.05"},
+    {"id": "t04", "prompt": "Loan A: 20000 at 6 percent simple interest over 3 years. Loan B: 20000 at 5.5 percent compounded annually over 3 years. Which costs less in total interest?", "answer": "B", "rationale": "3600 vs about 3486"},
+    {"id": "t05", "prompt": "A recipe for 4 needs 300g flour and 2 eggs. I am cooking for 7. Rounding eggs up to whole eggs, what do I need?", "answer": "525g flour, 4 eggs", "rationale": "300*1.75 = 525; 2*1.75 = 3.5 rounds to 4"},
+    {"id": "t06", "prompt": "A stock went from 80 to 60, then rose 25 percent. Am I above or below where I started?", "answer": "below", "rationale": "60 * 1.25 = 75"},
+    {"id": "t07", "prompt": "My project has tasks A (3 days), B (2 days, needs A), C (4 days, independent), D (1 day, needs B and C). What is the minimum completion time?", "answer": "6 days", "rationale": "critical path A then B then D is 6; C then D is 5"},
+    {"id": "t08", "prompt": "Plan X: 30 per month, no commitment. Plan Y: 20 per month on a 12 month contract with a 60 cancellation fee. I expect to need it for 7 months. Which is cheaper?", "answer": "Y", "rationale": "X is 7*30 = 210; Y is 7*20 + 60 = 200"},
+    {"id": "t09", "prompt": "A dataset has 1200 rows, 15 percent missing on column A and 10 percent on column B, with no overlap in which rows are missing. If I drop any row with a missing value, how many remain?", "answer": "900", "rationale": "no overlap means 25 percent affected; 1200 * 0.75"},
+    {"id": "t10", "prompt": "I earn 4800 a month after tax. Rent is 1650, fixed bills 420, and I want to save 20 percent of gross take-home. How much is left for everything else?", "answer": "1770", "rationale": "4800 - 1650 - 420 - 960 = 1770"}
+  ]
+}
